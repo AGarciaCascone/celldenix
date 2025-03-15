@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CellVioleta - Venta y Reparación de Celulares</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">CellVioleta</div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Celulares</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Reparaciones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <h1>¡Todo para tu celular!</h1>
+        <p>Ventas, accesorios y reparaciones con la mejor calidad</p>
+        <a href="#" class="boton">Ver Productos</a>
+    </section>
+    <section class="contacto">
+        <h2>Contactanos para reparaciones o consultas</h2>
+        <form action="enviar.php" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="mensaje" placeholder="Escribí tu mensaje..." required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+    <section class="turno">
+        <h2>Reservá tu turno para reparación</h2>
+        <form action="reservar.php" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="tel" name="telefono" placeholder="Tu teléfono" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <label for="problema">Seleccioná el problema de tu celular:</label>
+            <select name="problema" required>
+                <option value="">-- Seleccioná --</option>
+                <option value="Pin de carga">Pin de carga</option>
+                <option value="Pantalla rota">Pantalla rota</option>
+                <option value="Software">Problema de software</option>
+                <option value="Cambio de batería">Cambio de batería</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <textarea name="mensaje" placeholder="Comentarios adicionales (opcional)"></textarea>
+            <button type="submit">Reservar Turno</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 CellVioleta - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
